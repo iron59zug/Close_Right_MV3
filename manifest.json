@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Close Tabs to the Right",
+  "description": "Adds a toolbar button to close all tabs to the right of the current tab.",
+  "version": "0.1",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "24": "icon24.png",
+      "32": "icon32.png"
+    },
+    "default_title": "Close tabs to the right"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
